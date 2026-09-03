@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizVerse | Explore Quiz</title>
+
+    <link rel="stylesheet" href="explore-quiz.css">
+</head>
+
+<body>
+
+<header class="quiz-navbar">
+
+    <a href="index.html" class="logo">
+        Quiz<span>Verse</span>
+    </a>
+
+    <a href="explore.html" class="back-btn">
+        ← Back to Explore
+    </a>
+
+</header>
+
+
+<main class="quiz-page">
+
+    <section class="quiz-header">
+
+        <div class="quiz-category" id="quizCategory">
+            Explore Quiz
+        </div>
+
+        <h1 id="quizTitle">
+            Quiz
+        </h1>
+
+        <p>
+            Test your knowledge with 10 questions.
+        </p>
+
+        <div class="quiz-stats">
+
+            <div class="stat">
+                <span>Question</span>
+                <strong>
+                    <span id="currentQuestion">1</span>
+                    /
+                    <span id="totalQuestions">10</span>
+                </strong>
+            </div>
+
+            <div class="stat">
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+    </section>
+
+
+    <section class="question-card" id="questionCard">
+
+        <div class="question-number">
+            Question <span id="questionNumber">01</span>
+        </div>
+
+        <h2 id="questionText">
+            Loading question...
+        </h2>
+
+
+        <div class="options" id="optionsContainer">
+
+            <button class="option" data-option="A">
+
+                <span class="option-letter">A</span>
+
+                <span id="optionA">
+                    Option A
+                </span>
+
+            </button>
+
+
+            <button class="option" data-option="B">
+
+                <span class="option-letter">B</span>
+
+                <span id="optionB">
+                    Option B
+                </span>
+
+            </button>
+
+
+            <button class="option" data-option="C">
+
+                <span class="option-letter">C</span>
+
+                <span id="optionC">
+                    Option C
+                </span>
+
+            </button>
+
+
+            <button class="option" data-option="D">
+
+                <span class="option-letter">D</span>
+
+                <span id="optionD">
+                    Option D
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div class="feedback" id="feedback"></div>
+
+
+        <button class="next-button" id="nextButton" disabled>
+            Next Question →
+        </button>
+
+    </section>
+
+
+    <section class="result-card" id="resultCard">
+
+        <div class="result-icon">
+            🏆
+        </div>
+
+        <p class="result-label">
+            QUIZ COMPLETED
+        </p>
+
+        <h2 id="resultTitle">
+            Great Job!
+        </h2>
+
+        <p id="resultMessage">
+            You completed the quiz.
+        </p>
+
+
+        <div class="result-score">
+
+            <strong id="finalScore">
+                0 / 10
+            </strong>
+
+            <span id="percentage">
+                0%
+            </span>
+
+        </div>
+
+
+        <div class="result-buttons">
+
+            <button class="retry-button" id="retryButton">
+                Try Again
+            </button>
+
+            <a href="explore.html" class="home-button">
+                Explore More →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Quiz<span>Verse</span>
+    </div>
+
+    <p>
+        Test your knowledge. Challenge your mind.
+    </p>
+
+    <a href="index.html">
+        Back to Homepage
+    </a>
+
+    <p>
+        © 2026 QuizVerse. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="explore-quiz.js"></script>
+
+</body>
+</html>

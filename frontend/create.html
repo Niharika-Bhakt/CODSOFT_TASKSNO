@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizVerse | Create Quiz</title>
+
+    <link rel="stylesheet" href="create.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Quiz<span>Verse</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#explore">Explore Quizzes</a>
+        <a href="create.html" class="active">Create Quiz</a>
+        <a href="index.html#leaderboard">Leaderboard</a>
+        <a href="index.html#help">Help</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="builder-hero">
+
+        <div>
+            <span class="hero-badge">✨ QUIZ CREATOR STUDIO</span>
+
+            <h1>
+                Create something
+                <span>worth playing.</span>
+            </h1>
+
+            <p>
+                Turn your ideas into exciting quizzes, challenge your
+                friends and let the world test their knowledge.
+            </p>
+        </div>
+
+        <div class="hero-icon">
+            🧠
+        </div>
+
+    </section>
+
+
+    <!-- PROGRESS -->
+
+    <div class="progress-card">
+
+        <div>
+            <strong id="progressText">0% Complete</strong>
+            <p>Build your quiz step by step</p>
+        </div>
+
+        <div class="progress">
+            <span id="progressBar"></span>
+        </div>
+
+    </div>
+
+
+    <section class="builder">
+
+        <!-- LEFT SIDE -->
+
+        <div class="builder-main">
+
+            <!-- QUIZ DETAILS -->
+
+            <div class="card">
+
+                <div class="section-title">
+
+                    <div class="section-icon">📝</div>
+
+                    <div>
+                        <h2>Give your quiz an identity</h2>
+                        <p>Make people curious enough to play.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Quiz Title</label>
+
+                    <input
+                        id="quizTitle"
+                        type="text"
+                        placeholder="e.g. How Well Do You Know Technology?"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Quiz Description</label>
+
+                    <textarea
+                        id="quizDescription"
+                        placeholder="Tell players what your quiz is about..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Category</label>
+
+                        <select id="category">
+
+                            <option value="">Choose a category</option>
+
+                            <option>Technology</option>
+                            <option>Science</option>
+                            <option>Artificial Intelligence</option>
+                            <option>Programming & Development</option>
+                            <option>Computer Science</option>
+                            <option>World Knowledge</option>
+                            <option>General Knowledge</option>
+                            <option>History</option>
+                            <option>Geography</option>
+                            <option>Entertainment</option>
+                            <option>Movies & TV</option>
+                            <option>Sports</option>
+                            <option>Brain Challenges</option>
+                            <option>Business & Finance</option>
+                            <option>Space & Astronomy</option>
+                            <option>Environment</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Difficulty</label>
+
+                        <select id="difficulty">
+
+                            <option value="">Choose difficulty</option>
+                            <option>Easy</option>
+                            <option>Medium</option>
+                            <option>Hard</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUESTION BUILDER -->
+
+            <div class="card">
+
+                <div class="question-heading">
+
+                    <div class="section-title">
+
+                        <div class="section-icon pink">
+                            ❓
+                        </div>
+
+                        <div>
+                            <h2 id="questionNumber">
+                                Question 01
+                            </h2>
+
+                            <p>
+                                Write a question that makes players think.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <span class="mcq-badge">
+                        MCQ
+                    </span>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Your Question</label>
+
+                    <textarea
+                        id="question"
+                        placeholder="Type your question here..."
+                    ></textarea>
+
+                </div>
+
+
+                <label class="answer-label">
+                    Answer Options
+                </label>
+
+
+                <div class="options">
+
+                    <div class="option">
+
+                        <span>A</span>
+
+                        <input
+                            id="optionA"
+                            placeholder="Enter option A"
+                        >
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <span>B</span>
+
+                        <input
+                            id="optionB"
+                            placeholder="Enter option B"
+                        >
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <span>C</span>
+
+                        <input
+                            id="optionC"
+                            placeholder="Enter option C"
+                        >
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <span>D</span>
+
+                        <input
+                            id="optionD"
+                            placeholder="Enter option D"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="correct-box">
+
+                    <div>
+
+                        <strong>✓ Correct Answer</strong>
+
+                        <p>
+                            Choose the answer players should select.
+                        </p>
+
+                    </div>
+
+                    <select id="correctAnswer">
+
+                        <option value="">
+                            Select answer
+                        </option>
+
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="add-btn"
+                    id="addQuestion"
+                >
+                    + Add Question
+                </button>
+
+            </div>
+
+
+            <!-- QUESTIONS -->
+
+            <div class="card">
+
+                <div class="section-title">
+
+                    <div class="section-icon">
+                        📋
+                    </div>
+
+                    <div>
+                        <h2>Your Questions</h2>
+
+                        <p id="questionCount">
+                            No questions added yet
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div id="questionList">
+
+                    <div class="empty">
+
+                        <span>💡</span>
+
+                        <p>
+                            Your questions will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PUBLISH -->
+
+            <div class="publish-card">
+
+                <div>
+
+                    <small>ALMOST THERE 🚀</small>
+
+                    <h2>
+                        Ready to launch your quiz?
+                    </h2>
+
+                    <p>
+                        Add your questions and share your creation
+                        with the QuizVerse community.
+                    </p>
+
+                </div>
+
+                <button id="publishQuiz">
+                    Publish Quiz →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT PREVIEW -->
+
+        <aside class="preview">
+
+            <div class="preview-head">
+
+                <div>
+
+                    <small>LIVE PREVIEW</small>
+
+                    <h3>How players will see it</h3>
+
+                </div>
+
+                <span>● LIVE</span>
+
+            </div>
+
+
+            <div class="preview-card">
+
+                <div class="preview-top">
+
+                    <span id="previewCategory">
+                        Your Category
+                    </span>
+
+                    <span id="previewDifficulty">
+                        Difficulty
+                    </span>
+
+                </div>
+
+
+                <div class="preview-question">
+
+                    <small>
+                        QUESTION <span id="previewNumber">01</span>
+                    </small>
+
+                    <h2 id="previewQuestion">
+                        Your question will appear here...
+                    </h2>
+
+                </div>
+
+
+                <div class="preview-options">
+
+                    <button id="previewA">
+                        <b>A</b>
+                        <span>Option A</span>
+                    </button>
+
+                    <button id="previewB">
+                        <b>B</b>
+                        <span>Option B</span>
+                    </button>
+
+                    <button id="previewC">
+                        <b>C</b>
+                        <span>Option C</span>
+                    </button>
+
+                    <button id="previewD">
+                        <b>D</b>
+                        <span>Option D</span>
+                    </button>
+
+                </div>
+
+
+                <div class="preview-footer">
+
+                    <span>
+                        QuizVerse
+                    </span>
+
+                    <span>
+                        Question <b id="previewCount">1</b>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="creator-tip">
+
+                <span>💜</span>
+
+                <div>
+
+                    <strong>Creator Tip</strong>
+
+                    <p>
+                        Keep questions clear, interesting and
+                        avoid making the correct answer too obvious.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+<script src="create.js"></script>
+
+</body>
+</html>

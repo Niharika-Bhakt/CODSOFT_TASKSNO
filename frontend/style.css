@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7ff;
+    color: #202033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 72px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo,
+.footer-logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #6c3df4;
+}
+
+.logo span,
+.footer-logo span {
+    color: #f03d91;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #55556b;
+}
+
+.navbar nav a:hover {
+    color: #6c3df4;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn {
+    color: #6c3df4;
+    font-weight: 600;
+}
+
+.signup-btn {
+    padding: 10px 17px;
+    background: #6c3df4;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 560px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(120deg, #f7f3ff, #eef8ff);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-tag {
+    color: #f03d91;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #6c3df4;
+}
+
+.hero-description {
+    color: #66667a;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn,
+.create-btn {
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-weight: 700;
+    border: none;
+}
+
+.primary-btn,
+.create-btn {
+    background: #6c3df4;
+    color: white;
+}
+
+.secondary-btn {
+    background: white;
+    color: #6c3df4;
+    border: 1px solid #ddd6ff;
+}
+
+/* Hero Card */
+
+.hero-card {
+    width: 360px;
+    padding: 28px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(70, 50, 130, 0.15);
+}
+
+.quiz-card-top {
+    display: flex;
+    justify-content: space-between;
+    color: #6c3df4;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.hero-card h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #77778a;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.quiz-info {
+    display: flex;
+    gap: 10px;
+}
+
+.quiz-info span {
+    background: #f1efff;
+    color: #625d78;
+    padding: 6px 9px;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.hero-card button {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f03d91;
+    color: white;
+    font-weight: 700;
+}
+
+/* Stats */
+
+.stats {
+    padding: 30px 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: white;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h2 {
+    color: #6c3df4;
+    font-size: 28px;
+}
+
+.stat-box p {
+    color: #77778a;
+    font-size: 13px;
+}
+
+/* Sections */
+
+.section,
+.featured {
+    padding: 75px 8%;
+}
+
+.featured {
+    background: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #f03d91;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 5px 0;
+}
+
+.section-heading span {
+    color: #77778a;
+    font-size: 14px;
+}
+
+/* Categories */
+
+.category-container,
+.quiz-container,
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.category-card,
+.contact-card {
+    padding: 24px;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #eceaf5;
+    transition: 0.3s;
+}
+
+.category-card:hover,
+.contact-card:hover,
+.quiz-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(70, 50, 130, 0.1);
+}
+
+.category-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.category-card h3,
+.contact-card h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.category-card p,
+.contact-card p {
+    color: #88889a;
+    font-size: 13px;
+}
+
+.category-card button {
+    margin-top: 15px;
+    border: none;
+    background: transparent;
+    color: #6c3df4;
+    font-weight: 700;
+}
+
+/* Quiz Cards */
+
+.quiz-card {
+    overflow: hidden;
+    background: white;
+    border: 1px solid #eceaf5;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.quiz-image {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeaff;
+    font-size: 50px;
+}
+
+.quiz-card-content {
+    padding: 20px;
+}
+
+.quiz-category {
+    color: #6c3df4;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.quiz-card-content h3 {
+    margin: 7px 0;
+}
+
+.quiz-card-content p {
+    color: #77778a;
+    font-size: 13px;
+}
+
+.quiz-card-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    color: #88889a;
+    font-size: 11px;
+}
+
+.quiz-button {
+    width: 100%;
+    padding: 10px;
+    background: #6c3df4;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Create */
+
+.create-section {
+    margin: 60px 8%;
+    padding: 55px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #6c3df4, #f03d91);
+    color: white;
+}
+
+.create-content {
+    max-width: 550px;
+}
+
+.create-content > p:first-child {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.create-content h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.create-content p {
+    margin-bottom: 22px;
+}
+
+.create-section .create-btn {
+    background: white;
+    color: #6c3df4;
+}
+
+/* Leaderboard */
+
+.leaderboard {
+    max-width: 750px;
+    margin: auto;
+}
+
+.leader {
+    display: grid;
+    grid-template-columns: 50px 1fr 130px;
+    align-items: center;
+    padding: 17px 20px;
+    margin-bottom: 10px;
+    background: white;
+    border: 1px solid #eceaf5;
+    border-radius: 10px;
+}
+
+.leader span:last-child {
+    color: #6c3df4;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    padding: 45px 8%;
+    text-align: center;
+    background: #202033;
+    color: white;
+}
+
+.footer-logo {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #aaaabd;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin: 20px 0;
+}
+
+.footer-links a:hover {
+    color: #f03d91;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .category-container,
+    .quiz-container,
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section,
+    .featured {
+        padding: 60px 5%;
+    }
+
+    .category-container,
+    .quiz-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .create-section {
+        margin: 40px 5%;
+        padding: 35px 25px;
+    }
+
+    .create-content h2 {
+        font-size: 32px;
+    }
+
+    .leader {
+        grid-template-columns: 35px 1fr 100px;
+        font-size: 13px;
+    }
+}

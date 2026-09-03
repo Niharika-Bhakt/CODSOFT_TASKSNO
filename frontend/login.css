@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #202033;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* Main */
+
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 52% 48%;
+}
+
+
+/* Left */
+
+.journey {
+    position: relative;
+    overflow: hidden;
+    padding: 45px 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background: linear-gradient(135deg, #6c3df4, #f03d91);
+}
+
+.journey::before {
+    content: "?";
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.08);
+    transform: rotate(15deg);
+}
+
+.journey::after {
+    content: "✦";
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.08);
+}
+
+
+/* Logo */
+
+.logo {
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+.logo span {
+    color: #ffd5e9;
+}
+
+
+/* Journey content */
+
+.journey-content {
+    position: relative;
+    z-index: 2;
+    max-width: 560px;
+}
+
+.small-tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.journey h1 {
+    margin: 18px 0;
+    font-size: 50px;
+    line-height: 1.08;
+}
+
+.journey h1 span {
+    display: block;
+    color: #ffe0ef;
+}
+
+.journey-content > p {
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* Stats */
+
+.mini-stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.stat {
+    min-width: 115px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat strong {
+    display: block;
+    font-size: 22px;
+}
+
+.stat span {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Quote */
+
+.quote {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    max-width: 430px;
+    padding: 14px 16px;
+    border-left: 3px solid white;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.quote span {
+    font-size: 20px;
+}
+
+.quote p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* Copyright */
+
+.copyright {
+    position: relative;
+    z-index: 2;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* Right */
+
+.login-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #f8f7ff;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 410px;
+}
+
+
+/* Mobile Logo */
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* Heading */
+
+.heading {
+    margin-bottom: 30px;
+}
+
+.wave {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.heading h2 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.heading p {
+    color: #77778a;
+    font-size: 14px;
+}
+
+
+/* Inputs */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.input-group input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px;
+    border: 1px solid #dedbec;
+    border-radius: 9px;
+    outline: none;
+    background: white;
+    color: #202033;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #6c3df4;
+    box-shadow: 0 0 0 3px rgba(108, 61, 244, 0.08);
+}
+
+
+/* Label */
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-row a {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6c3df4;
+}
+
+
+/* Password */
+
+.password-input {
+    position: relative;
+}
+
+.password-input input {
+    padding-right: 60px;
+}
+
+.password-input button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #6c3df4;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* Remember */
+
+.options {
+    margin-bottom: 10px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #77778a;
+    font-size: 12px;
+}
+
+
+/* Message */
+
+.message {
+    min-height: 18px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.message.error {
+    color: #e83b72;
+}
+
+.message.success {
+    color: #168b5d;
+}
+
+
+/* Login Button */
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(90deg, #6c3df4, #f03d91);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108, 61, 244, 0.25);
+}
+
+.login-button span {
+    margin-left: 5px;
+}
+
+
+/* Divider */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+    color: #aaaabd;
+    font-size: 10px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #e3e0ed;
+}
+
+
+/* Signup */
+
+.signup-text {
+    text-align: center;
+    color: #77778a;
+    font-size: 13px;
+}
+
+.signup-text a {
+    color: #6c3df4;
+    font-weight: 700;
+}
+
+.signup-text a:hover,
+.label-row a:hover {
+    color: #f03d91;
+}
+
+
+/* Back */
+
+.back-home {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #77778a;
+    font-size: 12px;
+}
+
+.back-home:hover {
+    color: #6c3df4;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .login-page {
+        grid-template-columns: 1fr;
+    }
+
+    .journey {
+        min-height: 470px;
+    }
+
+    .journey h1 {
+        font-size: 42px;
+    }
+
+    .login-area {
+        min-height: 600px;
+    }
+
+    .copyright {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .journey {
+        display: none;
+    }
+
+    .login-area {
+        min-height: 100vh;
+        padding: 25px;
+    }
+
+    .mobile-logo {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .mobile-logo .logo {
+        color: #6c3df4;
+    }
+
+    .mobile-logo .logo span {
+        color: #f03d91;
+    }
+
+    .heading h2 {
+        font-size: 29px;
+    }
+}

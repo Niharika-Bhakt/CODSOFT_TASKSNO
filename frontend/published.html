@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Published Quiz | QuizVerse</title>
+
+    <link rel="stylesheet" href="published.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            Quiz<span>Verse</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#explore">Explore</a>
+            <a href="create.html">Create Quiz</a>
+            <a href="index.html#leaderboard">Leaderboard</a>
+        </nav>
+
+        <a href="create.html" class="back-btn">
+            ← Edit Quiz
+        </a>
+
+    </header>
+
+
+    <!-- Quiz Header -->
+    <section class="quiz-header">
+
+        <div class="published-tag">
+            ✓ QUIZ PUBLISHED
+        </div>
+
+        <h1 id="quizTitle">
+            Your Quiz Title
+        </h1>
+
+        <p id="quizDescription">
+            Challenge yourself and test your knowledge.
+        </p>
+
+        <div class="quiz-details">
+
+            <div class="detail">
+                <span>📚</span>
+                <strong id="quizCategory">Technology</strong>
+                <small>Category</small>
+            </div>
+
+            <div class="detail">
+                <span>⚡</span>
+                <strong id="quizDifficulty">Medium</strong>
+                <small>Difficulty</small>
+            </div>
+
+            <div class="detail">
+                <span>🎨</span>
+                <strong id="quizTheme">Classic</strong>
+                <small>Theme</small>
+            </div>
+
+            <div class="detail">
+                <span>❓</span>
+                <strong id="quizCount">0</strong>
+                <small>Questions</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Creator Information -->
+    <section class="creator-section">
+
+        <div class="creator-item">
+
+            <div class="creator-icon">
+                👤
+            </div>
+
+            <div>
+                <small>CREATED BY</small>
+                <h3 id="quizCreator">QuizVerse Creator</h3>
+            </div>
+
+        </div>
+
+
+        <div class="creator-item">
+
+            <div class="creator-icon">
+                👥
+            </div>
+
+            <div>
+                <small>TEAM</small>
+                <h3 id="quizTeam">QuizVerse Team</h3>
+            </div>
+
+        </div>
+
+
+        <div class="creator-item">
+
+            <div class="creator-icon">
+                📅
+            </div>
+
+            <div>
+                <small>PUBLISHED ON</small>
+                <h3 id="quizDate">Today</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Questions -->
+    <main class="questions-container">
+
+        <div class="questions-heading">
+
+            <div>
+                <span>LET'S BEGIN</span>
+                <h2>Quiz Questions</h2>
+            </div>
+
+            <button class="start-btn" onclick="startQuiz()">
+                Start Quiz →
+            </button>
+
+        </div>
+
+
+        <div id="questionsList">
+
+            <!-- Questions will appear here -->
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            Quiz<span>Verse</span>
+        </div>
+
+        <p>
+            Create. Challenge. Conquer.
+        </p>
+
+    </footer>
+
+
+    <script src="published.js"></script>
+
+</body>
+</html>

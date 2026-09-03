@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizVerse | Quiz</title>
+
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <!-- BACK TO HOMEPAGE -->
+
+    <a href="index.html" class="back-home">
+        ← Back to Homepage
+    </a>
+
+
+    <!-- QUIZ PAGE -->
+
+    <main class="quiz-page">
+
+
+        <!-- QUIZ HEADER -->
+
+        <section class="quiz-header">
+
+            <div>
+
+                <span class="quiz-badge">
+                    ⚡ QUIZVERSE CHALLENGE
+                </span>
+
+                <h1 id="quizTitle">
+                    Quiz
+                </h1>
+
+                <p>
+                    Test your knowledge and choose the best answer.
+                </p>
+
+            </div>
+
+
+            <!-- SCORE -->
+
+            <div class="score-card">
+
+                <small>
+                    SCORE
+                </small>
+
+                <strong id="score">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+
+        <section class="progress-section">
+
+            <div class="progress-text">
+
+                <span>
+                    Question
+                    <b id="questionNumber">1</b>
+                    of
+                    <b id="totalQuestions">5</b>
+                </span>
+
+                <span id="progressPercent">
+                    20%
+                </span>
+
+            </div>
+
+
+            <div class="progress">
+
+                <span id="progressBar"></span>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUESTION CARD -->
+
+        <section class="question-card" id="questionCard">
+
+
+            <div class="question-label">
+
+                QUESTION
+                <span id="questionIndex">
+                    01
+                </span>
+
+            </div>
+
+
+            <!-- QUESTION -->
+
+            <h2 id="questionText">
+                Question will appear here
+            </h2>
+
+
+            <!-- OPTIONS -->
+
+            <div class="options">
+
+
+                <button
+                    class="option"
+                    data-option="A"
+                    type="button">
+
+                    <span class="option-letter">
+                        A
+                    </span>
+
+                    <p id="optionA"></p>
+
+                </button>
+
+
+                <button
+                    class="option"
+                    data-option="B"
+                    type="button">
+
+                    <span class="option-letter">
+                        B
+                    </span>
+
+                    <p id="optionB"></p>
+
+                </button>
+
+
+                <button
+                    class="option"
+                    data-option="C"
+                    type="button">
+
+                    <span class="option-letter">
+                        C
+                    </span>
+
+                    <p id="optionC"></p>
+
+                </button>
+
+
+                <button
+                    class="option"
+                    data-option="D"
+                    type="button">
+
+                    <span class="option-letter">
+                        D
+                    </span>
+
+                    <p id="optionD"></p>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- FEEDBACK -->
+
+            <div
+                class="feedback"
+                id="feedback">
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <div class="question-footer">
+
+                <span>
+                    💡 Select the best answer
+                </span>
+
+
+                <button
+                    id="nextButton"
+                    type="button"
+                    disabled>
+
+                    Next Question →
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- RESULT CARD -->
+
+        <section
+            class="result-card"
+            id="resultCard">
+
+
+            <div class="trophy">
+                🏆
+            </div>
+
+
+            <span class="completed">
+                QUIZ COMPLETED
+            </span>
+
+
+            <h2 id="resultTitle">
+                Amazing!
+            </h2>
+
+
+            <p id="resultMessage">
+                You completed the challenge.
+            </p>
+
+
+            <!-- FINAL SCORE -->
+
+            <div class="final-score">
+
+                <small>
+                    YOUR FINAL SCORE
+                </small>
+
+
+                <strong id="finalScore">
+                    0 / 5
+                </strong>
+
+
+                <span id="percentage">
+                    0%
+                </span>
+
+            </div>
+
+
+            <!-- RESULT BUTTONS -->
+
+            <div class="result-buttons">
+
+                <button
+                    id="retryButton"
+                    type="button">
+
+                    🔄 Try Again
+
+                </button>
+
+
+                <a href="quiz-select.html">
+                    Choose Another Quiz
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="quiz-data.js"></script>
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>

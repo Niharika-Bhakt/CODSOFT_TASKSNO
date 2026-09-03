@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizVerse | Choose Quiz</title>
+
+    <link rel="stylesheet" href="quiz-select.css">
+</head>
+
+<body>
+
+    <!-- BACK TO HOMEPAGE -->
+
+    <a href="index.html" class="back-home">
+        ← Back to Homepage
+    </a>
+
+
+    <!-- MAIN -->
+
+    <main class="select-page">
+
+        <section class="hero">
+
+            <span class="badge">
+                ⚡ QUIZVERSE CHALLENGE
+            </span>
+
+            <h1>
+                Choose Your
+                <span>Challenge</span>
+            </h1>
+
+            <p>
+                Pick a quiz and put your knowledge to the test.
+            </p>
+
+        </section>
+
+
+        <!-- QUIZ SELECTION CARD -->
+
+        <section class="selection-card">
+
+            <div class="card-heading">
+
+                <div class="icon">
+                    🧠
+                </div>
+
+                <div>
+                    <h2>What do you want to play?</h2>
+
+                    <p>
+                        Choose a quiz to begin your challenge.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- QUIZ DROPDOWN -->
+
+            <label for="quizSelection">
+                CHOOSE QUIZ
+            </label>
+
+            <select id="quizSelection">
+
+                <option value="">
+                    Select a quiz
+                </option>
+
+                <option value="Technology">
+                    Technology
+                </option>
+
+                <option value="Science">
+                    Science
+                </option>
+
+                <option value="World Knowledge">
+                    World Knowledge
+                </option>
+
+                <option value="Artificial Intelligence">
+                    Artificial Intelligence
+                </option>
+
+                <option value="Programming & Development">
+                    Programming & Development
+                </option>
+
+                <option value="Computer Science">
+                    Computer Science
+                </option>
+
+                <option value="History">
+                    History
+                </option>
+
+                <option value="Movies & TV">
+                    Movies & TV
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+                <option value="Environment">
+                    Environment
+                </option>
+
+            </select>
+
+
+            <!-- START BUTTON -->
+
+            <button id="startQuiz" type="button">
+                Start Quiz →
+            </button>
+
+            <p id="errorMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <script src="quiz-select.js"></script>
+
+</body>
+
+</html>

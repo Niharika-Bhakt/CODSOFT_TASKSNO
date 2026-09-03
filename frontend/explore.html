@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizVerse | Explore Quizzes</title>
+
+    <link rel="stylesheet" href="explore.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Quiz<span>Verse</span>
+    </a>
+
+    <a href="index.html" class="back-btn">
+        ← Back to Home
+    </a>
+
+</header>
+
+
+<main>
+
+    <section class="explore-hero">
+
+        <div class="hero-tag">
+            ✦ EXPLORE QUIZVERSE
+        </div>
+
+        <h1>
+            Explore Your
+            <span>Favourite Topics.</span>
+        </h1>
+
+        <p>
+            Choose a category, challenge yourself and
+            see how much you really know.
+        </p>
+
+    </section>
+
+
+    <section class="categories-section">
+
+        <div class="section-heading">
+            <p>QUIZ CATEGORIES</p>
+
+            <h2>Choose Your Challenge</h2>
+
+            <span>
+                Pick a topic and start your quiz.
+            </span>
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🎬
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Movies & TV
+                    </h3>
+
+                    <p>
+                        Test your knowledge about movies,
+                        television shows and famous characters.
+                    </p>
+
+                    <div class="category-bottom">
+
+                        <span>
+                            10 Questions
+                        </span>
+
+                        <button onclick="startExploreQuiz('Movies & TV')">
+                            Explore Quiz →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🎵
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Music
+                    </h3>
+
+                    <p>
+                        Challenge yourself with questions
+                        about songs, singers and music.
+                    </p>
+
+                    <div class="category-bottom">
+
+                        <span>
+                            10 Questions
+                        </span>
+
+                        <button onclick="startExploreQuiz('Music')">
+                            Explore Quiz →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ✈️
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Travel & Places
+                    </h3>
+
+                    <p>
+                        Discover countries, landmarks and
+                        amazing destinations around the world.
+                    </p>
+
+                    <div class="category-bottom">
+
+                        <span>
+                            10 Questions
+                        </span>
+
+                        <button onclick="startExploreQuiz('Travel & Places')">
+                            Explore Quiz →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🍔
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Food & Cooking
+                    </h3>
+
+                    <p>
+                        Test your knowledge about food,
+                        cuisines and cooking around the world.
+                    </p>
+
+                    <div class="category-bottom">
+
+                        <span>
+                            10 Questions
+                        </span>
+
+                        <button onclick="startExploreQuiz('Food & Cooking')">
+                            Explore Quiz →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    📚
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">
+                        05
+                    </span>
+
+                    <h3>
+                        Books & Literature
+                    </h3>
+
+                    <p>
+                        Explore questions about famous books,
+                        authors and world literature.
+                    </p>
+
+                    <div class="category-bottom">
+
+                        <span>
+                            10 Questions
+                        </span>
+
+                        <button onclick="startExploreQuiz('Books & Literature')">
+                            Explore Quiz →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🧩
+                </div>
+
+                <div class="category-content">
+
+                    <span class="category-number">
+                        06
+                    </span>
+
+                    <h3>
+                        Puzzles & Logic
+                    </h3>
+
+                    <p>
+                        Challenge your brain with logic,
+                        reasoning and thinking questions.
+                    </p>
+
+                    <div class="category-bottom">
+
+                        <span>
+                            10 Questions
+                        </span>
+
+                        <button onclick="startExploreQuiz('Puzzles & Logic')">
+                            Explore Quiz →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Quiz<span>Verse</span>
+    </div>
+
+    <p>
+        Test your knowledge. Challenge your mind.
+    </p>
+
+    <a href="index.html">
+        Back to Homepage
+    </a>
+
+    <p>
+        © 2026 QuizVerse. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="explore.js"></script>
+
+</body>
+</html>

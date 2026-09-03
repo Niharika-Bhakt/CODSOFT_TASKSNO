@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVerse | Test Your Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Quiz<span>Verse</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#explore">Explore Quizzes</a>
+            <a href="#create">Create Quiz</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#help">Help</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <div class="hero-tag">✦ The Ultimate Quiz Experience</div>
+
+            <h1>
+                Test Your Knowledge.
+                <br>
+                <span>Challenge Your Mind.</span>
+            </h1>
+
+            <p class="hero-description">
+                Create exciting quizzes, challenge your friends,
+                test your knowledge and discover how much you really know.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#explore" class="primary-btn">Take a Quiz →</a>
+                <a href="#create" class="secondary-btn">Create a Quiz +</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="quiz-card-top">
+                <span>🔥 Popular Quiz</span>
+                <span>10 Questions</span>
+            </div>
+
+            <h2>How Well Do You Know Technology?</h2>
+
+            <p>
+                Challenge yourself with this exciting technology quiz.
+            </p>
+
+            <div class="quiz-info">
+                <span>💻 Technology</span>
+                <span>⭐ Medium</span>
+            </div>
+
+            <button onclick="window.location.href='quiz-select.html'">Start Quiz →</button>
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stat-box">
+            <h2>100+</h2>
+            <p>Quizzes</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>1K+</h2>
+            <p>Questions</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>500+</h2>
+            <p>Players</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>50+</h2>
+            <p>Categories</p>
+        </div>
+    </section>
+
+
+    <!-- EXPLORE -->
+    <section class="section" id="explore">
+
+    <div class="section-heading">
+        <p>EXPLORE</p>
+        <h2>Explore Quizzes</h2>
+        <span>Choose a category and test your knowledge.</span>
+    </div>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <div class="category-icon">🎬</div>
+            <h3>Movies & TV</h3>
+            <p>Movies, television shows and famous characters.</p>
+            <button onclick="exploreCategory('Movies & TV')">
+                Explore →
+            </button>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🎵</div>
+            <h3>Music</h3>
+            <p>Test your knowledge about songs, singers and music.</p>
+            <button onclick="exploreCategory('Music')">
+                Explore →
+            </button>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">✈️</div>
+            <h3>Travel & Places</h3>
+            <p>Discover countries, landmarks and amazing destinations.</p>
+            <button onclick="exploreCategory('Travel & Places')">
+                Explore →
+            </button>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🍔</div>
+            <h3>Food & Cooking</h3>
+            <p>Questions about food, cuisines and cooking around the world.</p>
+            <button onclick="exploreCategory('Food & Cooking')">
+                Explore →
+            </button>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">📚</div>
+            <h3>Books & Literature</h3>
+            <p>Test your knowledge of books, authors and literature.</p>
+            <button onclick="exploreCategory('Books & Literature')">
+                Explore →
+            </button>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🧩</div>
+            <h3>Puzzles & Logic</h3>
+            <p>Challenge your brain with logic and thinking questions.</p>
+            <button onclick="exploreCategory('Puzzles & Logic')">
+                Explore →
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- FEATURED QUIZZES -->
+    <section class="featured">
+
+        <div class="section-heading">
+            <p>POPULAR</p>
+            <h2>Featured Quizzes</h2>
+            <span>Try some of our most popular quizzes.</span>
+        </div>
+
+        <div class="quiz-container">
+
+            <div class="quiz-card">
+                <div class="quiz-image">💻</div>
+
+                <div class="quiz-card-content">
+                    <span class="quiz-category">Technology</span>
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Test your HTML, CSS and JavaScript knowledge.
+                    </p>
+
+                    <div class="quiz-card-info">
+                        <span>10 Questions</span>
+                        <span>Medium</span>
+                    </div>
+
+                    <button class="quiz-button" onclick="startQuiz()">
+                        Start Quiz
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="quiz-card">
+                <div class="quiz-image">🌍</div>
+
+                <div class="quiz-card-content">
+                    <span class="quiz-category">General Knowledge</span>
+                    <h3>World Knowledge</h3>
+
+                    <p>
+                        See how well you know the world around you.
+                    </p>
+
+                    <div class="quiz-card-info">
+                        <span>15 Questions</span>
+                        <span>Easy</span>
+                    </div>
+
+                    <button class="quiz-button" onclick="startQuiz()">
+                        Start Quiz
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="quiz-card">
+                <div class="quiz-image">🧪</div>
+
+                <div class="quiz-card-content">
+                    <span class="quiz-category">Science</span>
+                    <h3>Science Challenge</h3>
+
+                    <p>
+                        Challenge yourself with science questions.
+                    </p>
+
+                    <div class="quiz-card-info">
+                        <span>20 Questions</span>
+                        <span>Hard</span>
+                    </div>
+
+                    <button class="quiz-button" onclick="startQuiz()">
+                        Start Quiz
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CREATE QUIZ -->
+    <section class="create-section" id="create">
+
+        <div class="create-content">
+            <p>CREATE YOUR OWN QUIZ</p>
+
+            <h2>
+                Turn Your Questions
+                Into a <span>Quiz.</span>
+            </h2>
+
+            <p>
+                Create your own quiz by adding questions,
+                multiple-choice options and correct answers.
+            </p>
+
+            <a href="create.html" class="primary-btn">
+             Create Quiz →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- LEADERBOARD -->
+    <section class="section" id="leaderboard">
+
+        <div class="section-heading">
+            <p>TOP PLAYERS</p>
+            <h2>🏆 Leaderboard</h2>
+            <span>See who is leading the QuizVerse community.</span>
+        </div>
+
+        <div class="leaderboard">
+
+            <div class="leader">
+                <span>🥇</span>
+                <strong>Parth Chaturvedi</strong>
+                <span>980 Points</span>
+            </div>
+
+            <div class="leader">
+                <span>🥈</span>
+                <strong>Niharika bhakt</strong>
+                <span>940 Points</span>
+            </div>
+
+            <div class="leader">
+                <span>🥉</span>
+                <strong>Aman Verma</strong>
+                <span>910 Points</span>
+            </div>
+
+            <div class="leader">
+                <span>4</span>
+                <strong>Priya Singh</strong>
+                <span>890 Points</span>
+            </div>
+
+            <div class="leader">
+                <span>5</span>
+                <strong>Rahul Joshi</strong>
+                <span>860 Points</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HELP -->
+    <section class="section" id="help">
+
+        <div class="section-heading">
+            <p>SUPPORT</p>
+            <h2>❓ How Can We Help?</h2>
+            <span>Everything you need to know about QuizVerse.</span>
+        </div>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <div class="category-icon">🎯</div>
+                <h3>How to Take a Quiz?</h3>
+                <p>
+                    Choose a quiz, answer each question and
+                    get your score instantly.
+                </p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">✏️</div>
+                <h3>How to Create a Quiz?</h3>
+                <p>
+                    Add questions, options and correct answers
+                    to create your own quiz.
+                </p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🏆</div>
+                <h3>How Does Scoring Work?</h3>
+                <p>
+                    Your score is calculated automatically
+                    based on your correct answers.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>📩 Contact Us</h2>
+            <span>Have a question? We'd love to hear from you.</span>
+        </div>
+
+        <div class="contact-container">
+
+            <a href="mailto:support@quizverse.com" class="contact-card">
+    <div class="category-icon">📧</div>
+    <h3>Email Us</h3>
+    <p>support@quizverse.com</p>
+</a>
+
+     <a href="#help" class="contact-card">
+         <div class="category-icon">💬</div>
+         <h3>Need Help?</h3>
+         <p>Our support team is here to help you.</p>
+     </a>
+
+    <div class="contact-card">
+      <div class="category-icon">🌐</div>
+        <h3>Stay Connected</h3>
+          <p>Follow QuizVerse for updates and new quizzes.</p>
+    </div>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            Quiz<span>Verse</span>
+        </div>
+
+        <p>Test your knowledge. Challenge your mind.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#create">Create Quiz</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#help">Help</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p>© 2026 QuizVerse. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVerse | Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <!-- LEFT SIDE -->
+        <section class="journey">
+
+            <a href="index.html" class="logo">
+                Quiz<span>Verse</span>
+            </a>
+
+            <div class="journey-content">
+
+                <span class="small-tag">WELCOME BACK, QUIZZER ✨</span>
+
+                <h1>
+                    Your quiz journey
+                    <span>continues here.</span>
+                </h1>
+
+                <p>
+                    Ready for another challenge? Sign in and jump back
+                    into quizzes, scores, achievements and more.
+                </p>
+
+                <div class="mini-stats">
+
+                    <div class="stat">
+                        <strong>100+</strong>
+                        <span>Quizzes</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>1K+</strong>
+                        <span>Questions</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>50+</strong>
+                        <span>Challenges</span>
+                    </div>
+
+                </div>
+
+                <div class="quote">
+                    <span>💡</span>
+                    <p>
+                        Every question is a chance to learn something new.
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 QuizVerse · Learn · Play · Compete
+            </p>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="login-area">
+
+            <div class="login-card">
+
+                <div class="mobile-logo">
+                    <a href="index.html" class="logo">
+                        Quiz<span>Verse</span>
+                    </a>
+                </div>
+
+                <div class="heading">
+
+                    <div class="wave">👋</div>
+
+                    <h2>Welcome back!</h2>
+
+                    <p>
+                        Sign in to continue your QuizVerse adventure.
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="input-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="input-group">
+
+                        <div class="label-row">
+
+                            <label for="password">Password</label>
+
+                            <a href="forgot-password.html" id="forgotPassword">
+                               Forgot Password?
+                            </a>
+                            
+                        </div>
+
+                        <div class="password-input">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Remember -->
+                    <div class="options">
+
+                        <label class="remember">
+                            <input type="checkbox" id="remember">
+                            <span>Remember me</span>
+                        </label>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <p id="loginMessage" class="message"></p>
+
+
+                    <!-- Login -->
+                    <button type="submit" class="login-button">
+                        Login
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+
+                <p class="signup-text">
+                    New to QuizVerse?
+                    <a href="signup.html">Create your account</a>
+                </p>
+
+                <a href="index.html" class="back-home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
